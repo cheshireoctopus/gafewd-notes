@@ -9,4 +9,6 @@ An example of this project is hosted at [http://gafewd.surge.sh/](http://gafewd.
 
 The web portal corresponding to these slides can be found here: [https://github.com/cheshireoctopus/gafewd-portal](https://github.com/cheshireoctopus/gafewd-portal).
 
-Please feel free to fork your own class. Contributions are welcome 👍
+A working outline for these notes is located here: [outline.md](outline.md).
+
+Please feel free to fork for your own class. Contributions are welcome 👍

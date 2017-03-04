@@ -51,17 +51,18 @@ Lab/HW: Layout Lab (pt. 1) - Relaxr (pt. 1) or Fashion Blog (pt. 1)
 ## Class 05 - Mon, 3/20 - Page Layout: Floats + Clears
 
 - Horizontal navigation
-- `display: inline-block`
+- The other `display` property: `inline-block`
 - CSS `float` property
 - CSS `clear` property
 
-- Lab: Layout Lab (pt. 2) - Relaxr (pt. 2) or Fasion Blog (pt. 2)
+Lab: Layout Lab (pt. 2) - Relaxr (pt. 2) or Fasion Blog (pt. 2)
 
 ## Class 06 - Wed, 3/22 - Page Layout: Lab
 
 - Final project review
 - Review `float` + `clear` properties
-- Startup Matchmaker lab
+
+Lab: Startup Matchmaker
 
 # Unit 2: Adding Interactivity with JavaScript
 

@@ -2,11 +2,11 @@
 <html lang="en">
 
 	<head>
-		<title>FEWD - Class 01</title>
+		<title>FEWD - Class 00</title>
 		<link rel="stylesheet" href="../css/reveal.css">
 		<link rel="stylesheet" href="../css/theme/general-assembly.css" id="theme">
 
-		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="../lib/css/zenburn.css">
@@ -26,528 +26,407 @@
 
 	<body>
 
-		<!--
-			Lesson 01 - HTML Basics
-
-			Learning Objectives:
-			- Internet basics
-			- HTML basics
-			- Describe content using HTML tags
-			- Correctly structure a HTML document using proper tags:
-				- <!DOCTYPE html>
-				- <html>
-				- <head>
-				- <body>
-			- Embed images using the <img> tag
-			- Link two HTML pages together using <a> tag
-		-->
 
 		<div class="reveal">
 			<div class="slides">
 				<section class="hero">
 					<h1>HELLO</h1>
-					<!-- <p>Please download <u>Class 01 starter code</u> from: <a href="../main/syllabus.html">http://gafewd.github.io/main/syllabus.html</a></p> -->
+				</section>
+
+				<section class="hero">
+					<h1>Welcome</h1>
+					<h1>To</h1>
+					<h1 class="red">FEWD</h1>
+“You don’t have to know everything. You simply need to know where to find it when necessary.” (John Brunner)
 				</section>
 
 				<section class="hero condensed">
-					<h1>Class <span class="red">#01</span></h1>
-					<h1>09/28/2016</h1>
-					<h1 class="lesson-title">Introduction to HTML</h1>
+					<h1>Class <span class="red">#00</span></h1>
+					<h1>09/26/2016</h1>
+					<h1 class="lesson-title">Class Intro & GitHub</h1>
 				</section>
 
 				<!-- AGENDA -->
 				<section data-background="#FFF" class="text-left">
 					<div class="heading">Agenda</div>
-
-					<div class="text-smaller">
-						<p>&#149; <a href="#/warmup">Warmup Exercise</a></p>
-						<p>&#149; <a href="#/how-the-net-works">How the Internet Works</a></p>
-						<p>&#149; <a href="#/html-basics">HTML Basics</a></p>
-						<p>&#149; <a href="#/html-elements">HTML Elements</a></p>
-						<p>&#149; <a href="#/html-structure">HTML Structure</a></p>
-						<p>&#149; <a href="#/img-tags">Image Tags</a></p>
-						<p>&#149; <a href="#/anchor-tags">Anchor (link) Tags</a></p>
-					</div>
+					<p>&#149; <a href="#/intro">Introductions</a></p>
+					<!-- <p>&#149; General Assembly Overview</p> -->
+					<p>&#149; <a href="#/overview">Course Overview</a> (expectations, procedures, etc.)</p>
+					<!-- <p>&#149; Tools</p> -->
+					<p>&#149; <a href="#/github">Git/GitHub</a></p>
 				</section>
 
-				<section class="title" id="warmup">
-					<h1>Warmup</h1>
-
+				<section class="title" id="intro">
+					<h1>Introductions</h1>
 				</section>
 
+				<!-- INSTRUCTIONAL TEAM -->
 				<section data-background="#FFF" class="text-left">
-					<div class="heading">Warmup: GitHub Refresher</div>
-
-					<div class="text-smaller">
-						<p>1. Open your <u>local</u> Github repo in Sublime Text (click and drag)</p>
-						<p>2. Create a new directory, <code class="code">class-work</code>, inside of your local repo</p>
-						<p>3. Create a new file, <code class="code">index.html</code>, inside of <code class="code">class-work</code></p>
-						<p>4. Add a message and commit your changes</p>
-						<p>5. Push/sync your local changes with your remote repo</p>
-						<p>6. Check your remote repo on <a href="github.com" target="_blank">github.com</a> to ensure changes have been made</p>
+					<div class="heading">Introductions: Instructional Team</div>
+					<p>&#149; Chandler Moisen</p>
+					<div class="pad-left-lg">
+						<p>&rArr; Frontend Developer @ <a href="http://percolate.com" target="_blankt">Percolate</a></p>
+						<p>&rArr; hello@chandlermoisen.com</p>
 					</div>
-				</section>
-
-				<!-- How the Internet Works (10 - 15 mins) -->
-				<section class="title text-smaller" id="how-the-net-works">
-					<h1>How the Internet Works</h1>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">How the Internet Works: An Analogy</div>
-					<div class="text-center">
-						<img src="../img/class01/florist.png">
+					<p>&#149; Nate Mandes</p>
+					<div class="pad-left-lg">
+						<p>&rArr; Instruction @ General Assembly</p>
+						<p>&rArr; nate.mandes@generalassemb.ly</p>
+					</div>
+					<div class="fragment">
+						<p>&#149; Student Services</p>
+						<p class="pad-left-lg">&rArr; studentservicesnyc@generalassemb.ly</p>
 					</div>
 				</section>
 
 				<section data-background="#FFF" class="text-left">
-					<div class="heading">How the Internet Works</div>
-					<div class="text-center">
-						<img src="../img/class01/dns.png">
+					<div class="heading">Introductions: Students</div>
+					<p>Please share:</p>
+					<div class="pad-left-lg">
+						<p>&#149; Your name</p>
+						<p>&#149; What you are up to</p>
+						<p>&#149; Why you enrolled in FEWD</p>
+						<p>&#149; Anything else you would like</p>
 					</div>
 				</section>
 
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">How the Internet Works</div>
-
-					<div class="text-smallest">
-						<p>&#149; Websites are really just collections of files:</p>
-						<div class="pad-left-lg text-smallest">
-							<p>&rArr; HTML</p>
-							<p>&rArr; CSS</p>
-							<p>&rArr; JavaScript</p>
-						</div>
-						<p class="fragment">&#149; Hosted on specialized computers &rArr; <b>servers</b></p>
-						<div class="fragment">
-							<p>&#149; Goals for FEWD:</p>
-							<div class="pad-left-lg text-smallest">
-								<p>1. Create these files</p>
-								<p>2. Organize these files</p>
-								<p>3. Host (serve) these files</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">What Are HTML, CSS, and JavaScript?</div>
-
-					<div class="text-smaller">
-						<p>&#149; Plain text files (they are not compressed; you can read them)</p>
-						<div class="fragment">
-							<p>&#149; Different file extensions:</p>
-							<div class="pad-left-lg">
-								<p>HTML => <code class="code">.html</code></p>
-								<p>CSS => <code class="code">.css</code></p>
-								<p>JavaScript => <code class="code">.js</code></p>
-							</div>
-						</div>
-						<p class="fragment">&#149; Text editors (like Sublime Text) allow <u>syntax highlighting</u>: assigns different colors to different types of code</p>
-					</div>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">What Are HTML, CSS, and JavaScript?</div>
-					<div class="text-smaller">
-						<p><u>HTML</u></p>
-						<p class="fragment pad-left-lg">Content / Structure / Presentation</p>
-						<p><u>CSS</u></p>
-						<p class="fragment pad-left-lg">Style / Design</p>
-						<p><u>JavaScript</u></p>
-						<p class="fragment pad-left-lg">Behavior / Interaction</p>
-						<p><a href="http://codepen.io/josephjbliss/pen/MYXVXd" target="_blank">Example</a></p>
-					</div>
-				</section>
-
-				<!-- HTML BASICS (15 - 20 mins) -->
-				<section class="title" id="html-basics">
-					<h1>HTML Basics</h1>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">HTML - History of HTML</div>
-
-					<p>&#149; HTML => HyperText Markup Language</p>
-					<p>&#149; Invented in 1989 by Sir Timothy Berners-Lee</p>
-					<p>&#149; EVERY website you've ever visited is rendered in HTML</p>
-					<p>&#149; Web browsers parse (read) HTML and render (display) the results</p>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">HTML - Say what?</div>
-
-					<p><u>HT => HyperText</u></p>
-					<p class="text-smallest fragment pad-left-lg">HyperText is text which contains <a href="http://links.com">links</a> to other texts.</p>
-					<p><u>M => Markup</u></p>
-					<p class="text-smallest fragment pad-left-lg">Markup describes a system of describing or annotating text files. Markup describes the structure/layout of a webpage.</p>
-					<p><u>L => Language</u></p>
-					<p class="text-smallest fragment pad-left-lg">Just like any language, HTML has its own vocabulary, grammar, and syntax. You can think of HTML as the language that the web speaks.</p>
-				</section>
-
-				<section class="title" id="html-elements">
-					<h1>HTML Elements</h1>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-						<div class="heading">HTML Elements</div>
-
-						<div class="text-smaller">
-							<p>&#149; Fundamental building-block of HTML is the <b>element</b></p>
-							<!-- <p>&#149; Think of an element as a structural piece of your site</p> -->
-							<div class="fragment">
-								<p>&#149; Elements consist of:</p>
-								<div class="pad-left-lg text-smaller">
-									<p>Starting tag: <code class="code">&lt;p&gt;</code></p>
-									<p>Content: text, image, video, other elements, etc.</p>
-									<p>Ending tag: <code class="code">&lt;/p&gt;</code></p>
-								</div>
-							</div>
-							<div class="fragment">
-								<p>&#149; The content is what the user sees</p>
-								<p>&#149; The tags tell the browser what TYPE of content it is and how to present it</p>
-							</div>
-						</div>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">HTML Elements: Anatomy</div>
-
-					<div class="text-center">
-						<img src="../img/class01/html-element-structure.png">
-					</div>
-
-					<p>&#149; Note: the user will only see "Hello world!"</p>
-					<p>&#149; The browser will apply some basic styling to <code class="code">&lt;p&gt;</code> elements</p>
-				</section>
-
-	<!-- 			<section data-background="#FFF">
-					<h2 class="text-left">Group "Chunks" of Content</h2>
-					<hr>
-
-					<img src="../img/class01/chunk.png">
+				<!--  GA OVERVIEW -->
+				<!-- <section class="title">
+					<h1>GA Overview</h1>
 				</section> -->
 
-				<section class="title">
-					<h1>HTML Tags Review</h1>
-				</section>
-
-				<section class="center">
-					<code class="code">&#60;h1&#62;&#60;/h1&#62;</code>
+				<!-- COURSE OVERVIEW -->
+				<section class="title" id="overview">
+					<h1>Course Overview</h1>
 				</section>
 
 				<section data-background="#FFF" class="text-left">
-					<div class="heading">Heading Tags</div>
-
-					<p>&#149; Used to display text as a title/headline of a webpage/section</p>
-					<p>&#149; Tags &lt;h1&gt; through &lt;/h6&gt;</p>
-				</section>
-
-				<section class="center">
-					<h1><code class="code">&#60;h1&#62;&#60;/h1&#62;</code></h1>
-					<h2><code class="code">&#60;h2&#62;&#60;/h2&#62;</code></h2>
-					<h3><code class="code">&#60;h3&#62;&#60;/h3&#62;</code></h3>
-					<h4><code class="code">&#60;h4&#62;&#60;/h4&#62;</code> </h4>
-					<h5><code class="code">&#60;h5&#62;&#60;/h5&#62;</code></h5>
-					<h6><code class="code">&#60;h6&#62;&#60;/h6&#62;</code></h6>
-				</section>
-
-				<section class="center">
-					<code class="code">&#60;p&#62;&#60;/p&#62;</code>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">Paragraph Tags</div>
-
-					<p>&#149; <code class="code">&#60;p&#62;This is a paragraph&#60;/p&#62;</code></p>
-					<p>&#149; One of the bread-and-butter tags; will see this everywhere</p>
-					<p>&#149; Think of it as a paragraph of content in a book or article</p>
-				</section>
-
-				<section class="center">
-<pre><code>
-		&lt;ul>
-			&lt;li> First Item &lt;/li>
-			&lt;li> Second Item &lt;/li>
-			&lt;li> Third Item &lt;/li>
-		&lt;/ul>
-
-</code></pre>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">List Tags: Unordered List</div>
-
-					<div>
-						<p>&#149; <code class="code">&#60;ul&#62;&#60;/ul&#62;</code> defines an unordered list</p>
-						<p>&#149; Use together with <code class="code">&#60;li&#62;&#60;/li&#62;</code></p>
-						<hr>
+					<div class="heading">Course Overview: Logistics</div>
+					<p>&#149; FEWD will run:</p>
+					<div class="pad-left-lg">
+						<p>&rArr; From: Monday, September 26th</p>
+						<p>&rArr; To: Monday, December 5th</p>
+						<p>&rArr; At: 6:30PM - 9:30PM</p>
+					</div>
+					<div class="fragment">
+						<p>&#149; Does not meet:</p>
 						<div class="pad-left-lg">
-							<ul>
-								<li>Point Break (1991)</li>
-								<li><a href="http://www.billandted.org/">Bill and Ted's Excellent Adventure</a></li>
-								<li>Speed</li>
-								<li>Johnny Mnemonic</li>
-							</ul>
+							<p>&rArr; Monday, October 10th</p>
+							<p>&rArr; Wednesday, November 23rd (maybe...)</p>
 						</div>
 					</div>
 				</section>
 
-				<!-- CODE ALONG: 1 - GA Press Release (7 - 10 mins) -->
-				<section class="center">
-					<h1>Code Along</h1>
-					<div class="text-left text-smallest">
-						<p>1) Download <a href="../materials/class01/class01.zip">starter code</a></p>
-						<p>2) Open <code class="code">ga-press-release.txt</code></p>
-						<p>3) Open a new <a target="_blank" href="http://codepen.io">http://codepen.io</a></p>
-						<p>4) Describe <code class="code">ga-press-release.txt</code> using HTML</p>
-						<p>5) Make sure you do not exit your CodePen!</p>
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Course Overview</div>
+
+					<p>&#149; FEWD is comprised of 20 classes, spread over three units:</p>
+					<div class="pad-left-lg">
+						<p>&rArr; HTML/CSS Foundations</p>
+						<p>&rArr; Adding Interactivity with JavaScript</p>
+						<p>&rArr; Responsive Web Layout & Advanced Topics</p>
 					</div>
+					<p class="fragment">&#149; There are weekly HW assignments (until week 8)</p>
+					<p class="fragment">&#149; The course contains one final project</p>
 				</section>
 
-				<!-- HTML STRUCTURE (30 - 35 mins) -->
-				<section class="title" id="html-structure">
-					<h1>HTML Structure</h1>
-				</section>
-
-				<section class="center">
-					<div class="text-left">
-						<h1>1. Open any webpage</h1>
-						<h1>2. Right-click</h1>
-						<h1>3. 'View Page Source'</h1>
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Course Overview: Final Project</div>
+					<p>&#149; Final projects are a culmination of your FEWD experience</p>
+					<p>&#149; Due the last day of class: Monday, December 5th</p>
+					<p>&#149; Begin work in earnest after week five: October, 24th</p>
+					<div class="fragment">
+						<p>&#149; To get a head start: beging thinking of ideas now</p>
+						<p>&#149; For inspiration, check out <a href="https://gallery.generalassemb.ly/" target="_blank">GA's Gallery</a></p>
 					</div>
 				</section>
 
 				<section data-background="#FFF" class="text-left">
-					<div class="heading">HTML Structure: DOCTYPE</div>
+					<div class="heading">Course Overview: GA Graduation Requirements</div>
 
-<pre><code>
-	&lt;!DOCTYPE html&gt;
-
-</code></pre>
-						<p>&#149; Short for "document type declaration"</p>
-						<p>&#149; <b>ALWAYS</b> the first line of your HTML</p>
-						<p>&#149; Tells the browser which "flavor" of HTML is being used</p>
-						<p>&#149; All modern websites <u>should</u> use HTML5 DOCTYPE</p>
+					<p><strong>Homework:</strong> </p>
+                    <p class="pad-left-lg fragment">Complete 80% of assignments</p>
+					<p><strong>Attendance:</strong></p>
+                    <p class="pad-left-lg fragment">Miss no more than three classes</p>
+					<p><strong>Final Project:</strong></p>
+                    <p class="pad-left-lg fragment">Turn it in!</p>
 				</section>
 
-				<section class="center">
-					<h1>Some Doctypes...</h1>
-					<img src="../img/class01/web-timeline.jpg">
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Course Overview: Homework</div>
+					<div class="text-smaller">
+					<p>&#149; Overview</p>
+					<div class="pad-left-lg">
+						<p>&rArr; One assignment per week</p>
+						<p>&rArr; Will start end of class Wednesdays as final exercise</p>
+						<p>&rArr; Due the following Monday</p>
+						<p>&rArr; Expect feedback in three to five days</p>
+					</div>
+					<div class="fragment">
+						<p>&#149; Grading</p>
+						<div class="pad-left-lg">
+							<p>&rArr; Complete/Incomplete</p>
+						</div>
+					</div>
+					<div class="fragment">
+						<p>&#149; Late Assignments</p>
+						<div class="pad-left-lg">
+							<p>&rArr; While late assignments are accepted, they will not receive feedback</p>
+						</div>
+					</div>
+					</div>
 				</section>
 
-				<section class="center">
-					<p>1999</p>
-					<p>
-						<code class="code">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd"&gt;</code>
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Course Overview: Emotional Learning Curve</div>
+					<div class="text-center">
+						<img src="../img/main/emotional_learning_curve.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Course Overview: Office Hours</div>
+					<p>&#149; FEWD is challenging</p>
+					<p>&#149; We want you to succeed and are here for you</p>
+					<div class="fragment">
+						<p>&#149; How To Reach Us:</p>
+						<div class="pad-left-lg text-smaller">
+							<p>&rArr; Hit us up on Slack/email</p>
+							<p>&rArr; Schedule office hours</p>
+							<p>&rArr; In-person/Skype/Hangouts/Snapchat</p>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Getting Help</div>
+
+					<p>&#149; Google is your friend</p>
+					<p>&#149; <a href="http://stackoverflow.com/" target="_blank">Stackoverflow</a> is your friend - open an account tonight</p>
+					<p>&#149; (Some...a few) random ppl on the internet are your friends</p>
+					<p>&#149; Your classmates are your friends</p>
+					<p>&#149; Nate is your friend</p>
+					<p>&#149; I am also your friend</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Course Overview: Student Responsibilities</div>
+					<p>Note: As a self-directed program, students are a crucial part of the skill-acquisition process</p>
+					<div class="text-center">
+						<img src="../img/class00/student_teacher_commitment.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Course Overview: Exit Tickets/Feedback</div>
+
+					<p>&#149; GA is <u>REALLY</u> into feedback</p>
+					<p>&#149; Helps us, help you</p>
+					<div class="fragment">
+						<p>&#149; Two <b>BIG</b> feeback surveys:</p>
+						<div class="pad-left-lg text-smaller">
+		                	<p>&rArr; Midway</p>
+		                	<p>&rArr; End</p>
+		                </div>
+	                </div>
+	                <div class="fragment">
+						<p>&#149; Small feedback after every class:</p>
+						<div class="pad-left-lg text-smaller">
+							<p>&rArr; Help Nate and I improve on a weekly basis</p>
+							<p>&rArr; Useful for remaining questions (addressed next class)</p>
+						</div>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Course Overview: Tools</div>
+					<p class="fragment">&#149; <strong>Web Browser:</strong> Google Chrome</p>
+					<p class="fragment">&#149; <strong>Text Editor:</strong> Sublime Text 3</p>
+					<p class="fragment">&#149; <strong>GitHub:</strong> <a href="http://github.com">http://github.com</a></p>
+					<p class="fragment">&#149;
+						<strong>CodePen:</strong> <a href="http://codepen.io/Yakudoo/pen/YXxmYR">codepen.io</a>
 					</p>
-					<br>
-					<br>
+					<p class="fragment">&#149; <strong>Slack Channel:</strong> <a href="https://fewd97.slack.com/">https://fewd97.slack.com/</a></p>
+					<p class="fragment">&#149; <strong>Course Website:</strong> <a href="http://gafewd.github.io">http://gafewd.surge.sh</a></p>
+				</section>
+
+				<!-- GIT/GITHUB -->
+				<section class="title" id="github">
+					<h1>git/github</h1>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Git: What is it?</div>
+
+					<p>&#149; git &ne; GitHub</p>
+					<p>&#149; git is a version control program</p>
+					<p>&#149; Watches files and records any changes</p>
+					<p>&#149; Allows developers to save the current status of a project</p>
+					<p>&#149; Helps software teams coordinate</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Git: That Learning Curve</div>
+					<div class="text-center">
+						<img src="../img/class00/git-may-may.jpg" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">GitHub: What is it?</div>
+					<p>&#149; GitHub is a platform that makes it easy to work with git</p>
+					<p>&#149; Like Dropbox, but for code</p>
+					<p>&#149; Stores a history of files and their changes</p>
+					<p>&#149; Hosts files in the cloud; easy to share finished product</p>
+					<p>&#149; Also serves as a platform of sorts for developers collaborating on projects:</p>
+					<div class="pad-left-lg">
+						<p>&rArr; <a href="https://github.com/twbs/bootstrap">Twitter Bootstrap</a></p>
+						<p>&rArr; <a href="https://github.com/twbs/bootstrap/issues/3057">Makes for good drama</a></p>
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">GitHub - Why Do Developers Use It?</div>
+
+					<p>&#149; Tracks changes; see who worked on (or, broke) what</p>
+					<p>&#149; Stores history; can easily revert and fix mistakes</p>
+					<p>&#149; Helps multiple developers to work on the same project</p>
+					<p>&#149; Allows for line-by-line feedback (useful for homework)</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">GitHub - Some Vocab</div>
+
+					<p>1. Repository</p>
+					<p>2. Clone</p>
+					<p>3. Commit</p>
+					<p>4. Push</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">GitHub - Repository/Repo</div>
+
+					<p>&#149; Basic element of GitHub</p>
+					<p>&#149; Contains all of a project's files (all the code)</p>
+					<p>&#149; One or more users can contribute to a single repository</p>
+					<p>&#149; Repositories are either public or private</p>
+					<p>&#149; By EOC, you will each create your own repo!</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">GitHub - Clone</div>
+
+					<div class="text-smaller">
+						<p>&#149; Copies/clones a <u>remote</u> repo to your machine</p>
+						<p>&#149; This copy/clone is called a <u>local</u> repo</p>
+						<p>&#149; Changes to the <u>local</u> repo will not affect the <u>remote</u></p>
+						<p>&#149; Multiple users can clone the same repo:</p>
+					</div>
+					<div class="text-center">
+						<img src="../img/class00/git-clone.gif" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">GitHub - Commit</div>
+
+					<p>&#149; A snapshot of changes to a repo</p>
+					<p>&#149; Think of it as "saving" your <u>local</u> changes</p>
+					<p>&#149; Commits do not change the original, remote repo</p>
+					<p>&#149; Contains a <a href="http://www.commitlogsfromlastnight.com/" target="_blank">message</a> describing the changes made</p>
+					<div class="text-center">
+						<img src="../img/class00/git-commit.png" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">GitHub - Push</div>
+
+					<p>&#149; "Pushes" your commits (saved changes) to a <u>remote</u> repository</p>
+					<p>&#149; Allows other developers to see your changes and "pull them down" to their own local repos</p>
+					<div class="text-center">
+						<img src="../img/class00/git-push-pull.jpg" alt="">
+					</div>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">GitHub - How Will We Use It?</div>
+
+					<p>&#149; You will create your own repository to host your:</p>
+					<div class="pad-left-lg">
+						<p>&rArr; Homework</p>
+						<p>&rArr; Class work</p>
+						<p>&rArr; Final projects</p>
+					</div>
+					<p>&#149; Instructors will use your repo to grade homework</p>
+					<p>&#149; Your repo will serve as a public portfolio of your accomplishments</p>
+				</section>
+
+				<section class="hero">
+					<h1>Don't Worry</h1>
+					<h1>We Will Practice</h1>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">GitHub Checklist</div>
+
+					<p>1) Create GitHub account</p>
+					<p>2) Download GitHub <a href="https://desktop.github.com/">desktop application</a></p>
+					<p>3) Create a new GitHub repo</p>
+					<p>4) Clone your newly created repo to your machine</p>
+					<p>5) Add files to your cloned repo</p>
+					<p>6) Commit, sync, and push your changes to Github's servers</p>
+					<p>7) View your changes online</p>
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Muy Importante</div>
+
+					<p>&#149; Your repo's name needs to match the following format:</p>
+					<p class="pad-left-lg"><code class="code">YOUR_USERNAME.github.io</code></p>
 					<div class="fragment">
-						<p>2012</p>
-						<p><code class="code">&lt;!DOCTYPE html&gt;</code></p>
-					</div>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">HTML Structure: &lt;html&gt;</div>
-
-					<div class="text-smaller">
-						<p>&#149; <code class="code">&lt;html&gt;</code> is HTML...</p>
-						<p>&#149; All HTML should be contained inside <code class="code">&lt;html&gt;&lt;/html&gt;</code></p>
-						<p>&#149; Represents the root of your HTML document</p>
-						<p>&#149; Within our <code class="code">&lt;html&gt;</code> tags, we have:</p>
-						<p class="pad-left-lg"><code class="code">&lt;head&gt;&lt;/head&gt;</code></p>
-						<p class="pad-left-lg"><code class="code">&lt;body&gt;&lt;/body&gt;</code></p>
-					</div>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">HTML Structure: &lt;head&gt;</div>
-
-					<div class="text-smaller">
-						<p>&#149; <code class="code">&lt;head&gt;</code> : first tag inside <code class="code">&lt;html&gt;&lt;/html&gt;</code></p>
-						<p class="pad-left-lg">&#149; Adds additional, behind-the-scenes content</p>
-						<p class="pad-left-lg">&#149; Not displayed; but is machine parsable</p>
-						<p class="fragment">&#149; <code class="code">&lt;title&gt;</code> : adds title to page</p>
-						<div class="fragment">
-							<p>&#149; <code class="code">&lt;meta&gt;</code> : adds data...about data</p>
-							<p>&#149; Some meta data: page description, keywords, author</p>
-							<p>&#149; External CSS documents are linked in the <code class="code">&lt;head&gt;</code></p>
+						<p>&#149; Ex 1:</p>
+						<div class="pad-left-lg">
+							<p><strong>Username: </strong> keanu-reeves</p>
+							<p><strong>Repo: </strong> <code class="code">keanu-reeves.github.io</code></p>
 						</div>
 					</div>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">HTML Structure: &lt;body&gt;</div>
-
-					<p>&#149; <code class="code">&lt;body&gt;</code> : second tag inside <code class="code">&lt;html&gt;&lt;/html&gt;</code></p>
-					<p>&#149; Follows <code class="code">&lt;head&gt;&lt;/head&gt;</code></p>
-					<p>&#149; Contains HTML/content that will be displayed to user</p>
-					<p>&#149; Vast majority of HTML will be placed inside the <code class="code">&lt;body&gt;</code></p>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">HTML Structure: Basic Structure</div>
-<pre><code>
-	&lt;!DOCTYPE html&gt;
-	&lt;html>
-	  &lt;head>
-	    &lt;title>The Website Title&lt;/title>
-          &lt;/head>
-
-	  &lt;body>
-	    &lt;h1>ALL HTML CONTENT HERE!&lt;/h1>
-	  &lt;/body>
-	&lt;/html>
-
-</code></pre>
-				</section>
-
-				<!-- CODE ALONG: 2 - HTML Structure (5 - 7 mins) -->
-				<section class="center">
-					<h1>Exercise</h1>
-					<div class="text-left text-smaller">
-						<p>1. Create a directory, <code class="code">homework</code> in your <u>local</u> repo</p>
-						<p>2. Create a directory,  <code class="code">ga-press-release</code>, in <code class="code">homework</code></p>
-						<p>3. Create an <code class="code">index.html</code> file inside <code class="code">ga-press-release</code></p>
-						<p>4. Copy your code from CodePen into <code class="code">index.html</code></p>
-						<p>5. Save your code and right-click to open in browser</p>
-					</div>
-				</section>
-
-				<!-- EXERCISE 1 - GA Press Release (Structured) (15 - 20 mins) -->
-				<section class="center">
-					<h1>Exercise</h1>
-					<div class="text-left text-smaller">
-						<p>1. Restructure the page using proper HTML</p>
-						<p>2. Include:</p>
-						<div class="text-smallest pad-left-lg">
-							<p>&#149; <code class="code">&lt;!DOCTYPE html&gt;</code></p>
-							<p>&#149; <code class="code">&lt;html&gt;</code></p>
-							<p>&#149; <code class="code">&lt;head&gt;</code></p>
-							<p>&#149; <code class="code">&lt;title&gt;</code></p>
-							<p>&#149; <code class="code">&lt;body&gt;</code></p>
-						</div>
-					</div>
-				</section>
-
-				<!-- BREAK (5-7 mins) -->
-				<section class="center">
-					<h1>5 minute break</h1>
-					<img src="../img/main/break-time-bear.jpg">
-				</section>
-
-				<!-- EXERCISE 2 - Cookie Recipe (20 - 25 mins) -->
-				<section class="center">
-					<h1>Exercise</h1>
-					<div class="text-left text-smallest">
-						<p>1. Find a partner</p>
-						<p>2. Copy <code class="code">cookie-recipe</code> into <code class="code">class-work</code></p>
-						<p>3. Create a new file, <code class="code">index.html</code>, in <code class="code">cookie-recipe</code></p>
-						<p>4. Use HTML to describe <code class="code">copy.txt</code></p>
-						<p>4.5 You will need to use an <b>ORDERED</b> list tag</p>
-						<p>5. Don't forget proper HTML structure!</p>
-						<p>Bonus: add the cookies.jpg image</p>
-					</div>
-				</section>
-
-				<!-- IMAGE TAGS (7- 12 mins) -->
-				<section class="title" id="img-tags">
-					<h1>&lt;img&gt; tags</h1>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">&lt;img&gt; tags</div>
-
-					<p>&#149; Images are placed using the <code class="code">&lt;img&gt;</code> tag</p>
-					<p>&#149; The <code class="code">&lt;img&gt;</code> doesn't wrap content, so it doesn't close!</p>
-					<p>&#149; Requires a <code class="code">src</code> attribute; tells the browser where the source of the image (the image file) is located</p>
-<pre><code>
-	&lt;img src="cookie.png"&gt;
-
-</code></pre>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">lt;img&gt; tags: src attribute</div>
-
-					<p>&#149; The <code class="code">src</code> attribute can be a relative/absolute path:</p>
-					<p>&#149; <strong>Relative:</strong></p>
-<pre><code>
- &lt;img src="cookie.png"&gt;
-
-</code></pre>
 					<div class="fragment">
-						<p>&#149; <strong>Absolute:</strong></p>
-						<div class="text-smaller">
-<pre><code>
- &lt;img src="http://guardianlv.com/wp-content/uploads/2013/12/reeves2.jpg"&gt;
-
-</code></pre>
+						<p>&#149; Ex 2:</p>
+						<div class="pad-left-lg">
+							<p><strong>Username: </strong> patrick_swayze</p>
+							<p><strong>Repo: </strong> <code class="code">patrick_swayze.github.io</code></p>
 						</div>
-					</div>
-				</section>
-
-				<!-- REACP (5 mins) -->
-				<section class="center">
-					<h1>What is a website?</h1>
-					<p class="fragment">A collection of files:</p>
-					<p class="fragment">HTML</p>
-					<p class="fragment">CSS</p>
-					<p class="fragment">JavaScript</p>
-					<h2 class="fragment">Can you have more than one html file?</h2>
-				</section>
-
-				<!-- ANCHOR TAGS (7 - 12 mins) -->
-				<section class="title" id="anchor-tags">
-					<h1>Anchor Tags</h1>
-				</section>
-
-				<section data-background="#FFF" class="text-left">
-					<div class="heading">Anchor Tags</div>
-
-					<div class="text-smaller">
-						<p>&#149; <code class="code">&lt;a&gt;</code> tags are used to navigate between HTML pages</p>
-						<p>&#149; <code class="code">href</code> attribute tells the browser where to go:</p>
-
-<pre><code>
-	&lt;a href="http://generalassemb.ly">General Assembly&lt;/a>
-
-</code></pre>
-						<div class="fragment">
-							<p>&#149; Wrapped content is displayed: <a href="http://generalaseemb.ly">General Assembly</a></p>
-							<p>&#149; Like images, anchor tags use relative/absolute paths</p>
-						</div>
-					</div>
-				</section>
-
-				<!-- CODE ALONG 3: Anchor Tags (10 - 15 mins)-->
-				<section class="center">
-					<h1>Exercise/HW</h1>
-					<div class="text-left text-smallest">
-						<p>1. Re-open the <code class="code">ga-press-release</code> project</p>
-						<p>2. Add a new file, <code class="code">about.html</code>, to the same directory</p>
-						<p>3. Ensure <code class="code">about.html</code> contains proper formatting</p>
-						<p>4. Add two links to <code class="code">ga-press-release.html</code>:</p>
-						<p class="pad-left-lg">Absolute: link to <code class="code">http://generassemb.ly</code></p>
-						<p class="pad-left-lg">Relative: link to <code class="code">about.html</code></p>
-						<p>5. Add a link to <code class="code">about.html</code> that links back to <code class="code">index.html</code></p>
 					</div>
 				</section>
 
 				<!-- END/WRAPUP -->
 				<section class="center">
-					<h1>FIN</h1>
-					<img src="../img/main/the-end.jpg">
+					<img src="../img/main/the-end.jpg" alt="">
+				</section>
+
+				<section data-background="#FFF" class="text-left">
+					<div class="heading">Tips For Success</div>
+
+					<p class="fragment">&#149; Do the work</p>
+					<p class="fragment">&#149; Engage</p>
+					<p class="fragment">&#149; Become comfortable with the unknown</p>
+					<p class="fragment">&#149; Be curious and resourceful</p>
+					<p class="fragment">&#149; Reach out for help/help others</p>
+					<p class="fragment">&#149; Don't judge</p>
+					<p class="fragment">&#149; Do the work...and then some</p>
+					<p class="fragment">&#149; Remember why you enrolled</p>
 				</section>
 
 				<section data-background="#FFF" class="text-left">
 					<div class="heading">What's On Deck</div>
 
-                    <h4>Class #02 (of 20) - CSS Basics</h4>
-					<p>&#149; Introduction to CSS</p>
-					<p>&#149; Common CSS Properties (colors, font, text)</p>
-					<p>&#149; More file structure</p>
+                    <h4>Class #01 (of 20) - Introduction to HTML</h4>
+                    <div class="pad-left-lg">
+	                    <p>&rArr; HTML overview</p>
+	                    <p>&rArr; Document structure</p>
+	                    <p>&rArr; <code class="code">&lt;img&gt;</code> and <code class="code">&lt;a&gt;</code> tags</p>
+                    </div>
 				</section>
 			</div>
 		</div>

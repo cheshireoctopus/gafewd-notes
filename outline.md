@@ -1,6 +1,6 @@
 # Unit 1: HTML & CSS Foundations
 
-## Class 01 - Mon, 3/6 - Class Introduction and Setup
+## Class 01 - Mon, 3/6 - Class Introduction and GitHub
 
 Topics:
 - Introductions

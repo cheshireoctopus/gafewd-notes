@@ -1,6 +1,7 @@
 <p align="center">
 	<img src="img/fewd-logo.png" />
 </p>
+
 # FEWD: Slides
 
 An assortment of [Reveal.js](https://github.com/hakimel/reveal.js/)-powered slides for assistance teaching [General Assembly's](http://generalassemb.ly) part-time Frontend Web Development (FEWD) course. Can easibly be adapted for JavaScript Development (JSD) or other part-time classes and workshops.
